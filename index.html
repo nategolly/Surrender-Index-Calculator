@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surrender Index | Nate Golly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scoreboard">
+    <div class="scoreboard_header">
+        <h1>The Surrender Index</h1>
+        <p>Concept and Calculations from Jon Bois</p>
+    </div>
+
+    <div class="scoreboard_middle">
+        <div class="middle_box">
+            <p>Punters</p>
+            <input id="puntersBox"> 
+        </div>
+        <div class="middle_box">
+            <p>Time</p>
+            <input class="time_box" id="timeBox">
+        </div>
+        <div class="middle_box">
+            <p>Receivers</p>
+            <input id="receiversBox">
+        </div>
+    </div>
+
+    <div class="scoreboard_bottom">
+        <div class="bottom_box">
+            <p>Down</p>
+                <input type="text" value="4" readonly> 
+ 
+        </div> 
+        <div class="bottom_box">
+            <p>Distance</p>
+            <input id="distanceBox">
+
+        </div> 
+        <div class="checkbox">
+            <label>
+                <input type="radio" name="option" id="Own">
+                Own
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="option" id="Opp">
+                Opp
+                </label>
+        </div>
+
+        <div class="bottom_box">  
+            <p>Location</p>
+        <input id="locationBox">
+        </div>
+        <div class="bottom_box">
+        <p>Quarter</p>
+         <input id="quarterBox">
+        </div>
+    </div>
+</div>
+<div class="button">
+   <button onclick="convertToInt()" id="button">CALCULATE</button>
+   <p id="errorMessage" style="color: red; display: none;">Please input a valid integer.</p>
+</div>
+
+<div id="result" style="color: red"></div>
+<div id="finalResult" style="color: rgb(102, 255, 0)"></div>
+
+
+<div class="footer">Website created by Nathaniel Golly | Inspiration derived from <a href="https://www.youtube.com/watch?v=F9H9LwGmc-0"> This Video</a></div>
+
+<script src="script.js"></script>
+</body>
+</html>
